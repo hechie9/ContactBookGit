@@ -1,7 +1,7 @@
 package contactBook;
 
 public class Contact {
-    private String name;
+    private final String name;
     private int phone;
     private String email;
 
@@ -29,6 +29,7 @@ public class Contact {
 
     public void setEmail(String email) {
         this.email = email;
+
     }
 
     //Pre: otherContact != null
