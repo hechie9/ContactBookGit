@@ -54,6 +54,7 @@ public class ContactBook {
             }
         }
         return false;
+
     }
 
     //Pre: name != null && hasContact(name)
