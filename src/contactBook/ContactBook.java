@@ -45,6 +45,17 @@ public class ContactBook {
         return contacts[searchIndex(name)].getPhone();
     }
 
+    public boolean hasRepeated() {
+        for (int i = 0; i < counter; i++) {
+            int phone = contacts[i].getPhone();
+            for (int j = i+1; j < counter; j++) {
+                if (contacts[i].getPhone() == phone)
+                    return true;
+            }
+        }
+        return false;
+    }
+
     //Pre: name != null && hasContact(name)
     public String getEmail(String name) {
         return contacts[searchIndex(name)].getEmail();
