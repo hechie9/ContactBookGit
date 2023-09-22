@@ -4,6 +4,7 @@ import contactBook.ContactBook;
 import java.util.Scanner;
 
 
+
 public class Main {
     //Constantes que definem os comandos
     public static final String ADD_CONTACT    = "AC";
